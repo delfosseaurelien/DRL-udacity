@@ -1,10 +1,19 @@
-#Introduction 
+# Introduction 
 
 The task is to create an agent that is able to collect bananas. A reward of +1 is provided for yellow banana and -1 for blue banana.
 The objectif is to collect 13 yellow bananas successively. The state space contains the agent velocity.
 
 The agent have to choose four discrete actions (move forward,move backward, turn left, turn right).
 The Benchmarch implementation solves the environement in 1800 episodes.
+
+# Dependencies
+
+You need to install the environnement, put it at the root of the folder and call like this:
+
+env = UnityEnvironment(file_name="/Banana_Linux_NoVis/Banana.x86_64")
+
+You can download the environement for linux here:
+https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip
 
 ## Implementation
 ### Double DQN
@@ -34,3 +43,7 @@ Duelling architecture :
 
 * Output actions space
   
+# Improvement
+
+The main improvement is to implement the prioritized experience replay. It allows the agent to select the experience with a high priority. The priority is calculated with the temporal difference error and save in a binary tree to accelerate the access to the data. The priority in the tree is updated each time the target is calculated.
+(Impementation coming soon).
