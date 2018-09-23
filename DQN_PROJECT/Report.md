@@ -32,7 +32,7 @@ Network architecture:
   
 ### Double DQN + Duelling network
 
-The duelling architecture converges in 504 episodes with gamma = 0.9.
+The duelling architecture converges in 419 episodes with gamma = 0.9.
 We update softly the parameters of the target network.
 We update de target network every 4 steps.
 Duelling architecture : 
