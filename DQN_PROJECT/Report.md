@@ -15,6 +15,11 @@ env = UnityEnvironment(file_name="/Banana_Linux_NoVis/Banana.x86_64")
 You can download the environement for linux here:
 https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip
 
+# Run
+
+You just have to run the file navigation.py to launch the training of the agent.
+You need to specify in the file when building the agent if you want to launch the training with the duelling network or not.
+
 ## Implementation
 ### Double DQN
 
