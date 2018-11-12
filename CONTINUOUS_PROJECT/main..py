@@ -4,7 +4,6 @@ import torch
 import numpy as np
 from collections import deque
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 from ddpg_agent import Agent
 
@@ -77,3 +76,4 @@ plt.plot(np.arange(1, len(scores)+1), scores)
 plt.ylabel('Score')
 plt.xlabel('Episode #')
 plt.show()
+fig.save('final_plot.png')
