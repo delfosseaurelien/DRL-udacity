@@ -2,5 +2,48 @@
 
 This github includes all the codes for the intermediate and final project of the deep reinforcement learning course.
 
-The first project is in the folder DQN_PROJECT
-The second project is in the CONTINUOUS_PROJECT
+The first project is in the folder DQN_PROJECT:
+
+The task is to create an agent that is able to collect bananas. A reward of +1 is provided for yellow banana and -1 for blue banana. The objectif is to collect 13 yellow bananas successively. The state space contains the agent velocity.
+
+The agent have to choose four discrete actions (move forward,move backward, turn left, turn right). The Benchmarch implementation solves the environement in 1800 episodes.
+
+The second project is in the CONTINUOUS_PROJECT:
+
+The task is to create an agent that is able to move to a target location controlling a double jointed arm. A reward of +0.1 is provided for each step that the agent's hand is in the goal location.
+The objectif is to maintain position at the target location for as many time steps as possible.
+
+The agent have to predict a vector of four continuous actions between [-1,1] which correspond to the force on the arm.
+The observations space is a vector of 33 variables corresponding to position, rotation, velocity and angular velocities.
+
+We choose to work with the first version of the environnment with 1 agent. The task is to get an average score of +30 over 100 consecutive episodes. To do this, we choose to to work with a deep deterministic policy gradient.
+
+# Dependencies
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+1. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+ 
+2. Download the environement at this adres for linux
+  * DQN_PROJECT : https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip
+  * CONTINUOUS_PROJECT :  https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip
+
+3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+```bash
+git clone https://github.com/delfosseaurelien/DRL-udacity.git
+cd DRL-udacity
+pip install -r requirements.txt
+```
+
+
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
+```bash
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
+Run
+
