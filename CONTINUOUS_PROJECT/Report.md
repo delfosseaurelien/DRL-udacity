@@ -38,7 +38,10 @@ Critic architecture:
   * Output 1 value
   
 We update the network 10 times every 20 steps
-  
+
+The environment is solved in 202 episodes:
+![Reward]("scores.png")
+
 # Improvement
 
 The main improvement is to implement an a3C method or a ppo.
