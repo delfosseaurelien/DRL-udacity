@@ -20,7 +20,7 @@ https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Li
 
 # Run
 
-You just have to run the file continuous_control.py to launch the training of the agent.
+You just have to run the file main.py to launch the training of the agent.
 
 ## Implementation
 ### DDPG
