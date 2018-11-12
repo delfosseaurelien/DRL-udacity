@@ -63,7 +63,7 @@ def ddpg(n_episodes=500):
         
         if len(scores)>100:
             if np.mean(scores[-100:])>30:
-                print("Solve the environnement")
+                print("Solve the environnement in {} episodes".format(len(scores)))
                 torch.save(agent.actor_local.state_dict(), 'checkpoint_actor.pth')
                 torch.save(agent.critic_local.state_dict(), 'checkpoint_critic.pth')
                 break
