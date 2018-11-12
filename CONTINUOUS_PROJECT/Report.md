@@ -46,3 +46,5 @@ The environment is solved in 202 episodes:
 # Improvement
 
 The main improvement is to implement an a3C method or a ppo.
+An a3c use a single brain for multiples agents. This is an online method which converge faster than the ddpg.
+Policy Gradient method are really sensitive to the choosen parameter and to the sampling efficiency. The PPO make use of the ratio of probability under new and old policy to control the deviation between the old policy and enable multiple epochs of minibatch updates.
