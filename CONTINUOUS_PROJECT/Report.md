@@ -40,7 +40,7 @@ Critic architecture:
 We update the network 10 times every 20 steps
 
 The environment is solved in 202 episodes:
-![Reward]("scores.png")
+![Reward](scores.png)
 
 # Improvement
 
