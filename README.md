@@ -2,13 +2,13 @@
 
 This github includes all the codes for the intermediate and final project of the deep reinforcement learning course.
 
-### The first project is in the folder DQN_PROJECT:
+### DQN_PROJECT:
 
 The task is to create an agent that is able to collect bananas. A reward of +1 is provided for yellow banana and -1 for blue banana. The objectif is to collect 13 yellow bananas successively. The state space contains the agent velocity.
 
 The agent have to choose four discrete actions (move forward,move backward, turn left, turn right). The Benchmarch implementation solves the environement in 1800 episodes.
 
-### The second project is in the CONTINUOUS_PROJECT:
+### CONTINUOUS_PROJECT:
 
 The task is to create an agent that is able to move to a target location controlling a double jointed arm. A reward of +0.1 is provided for each step that the agent's hand is in the goal location.
 The objectif is to maintain position at the target location for as many time steps as possible.
@@ -41,9 +41,8 @@ pip install -r requirements.txt
 ```
 
 
-4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
+4. In each subfolder of project, run he file main.py
 ```bash
-python -m ipykernel install --user --name drlnd --display-name "drlnd"
+python main.py
 ```
-Run
 
