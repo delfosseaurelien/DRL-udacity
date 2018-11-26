@@ -19,7 +19,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 ### Getting Started
 
 1. Clone this repo   
-```git clone https://github.com/cesare-montresor/drl-multi-agent.git```
+```git clone https:/***```
 
 2. In the repo is provided a copy on the Tennis for OSX, in case you have a different OS, download the environment from one of the links below:
 
