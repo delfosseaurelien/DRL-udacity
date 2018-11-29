@@ -13,7 +13,8 @@ Without this, the algorithm has some difficulties to converge.
 
 I try to reduce the size of the network but it did not help. The results are  difficult to replicate.
 
-##Improvements
+## Improvements
+
 An implementation of the PPO would really help for the convergence thanks to the gradient clipping and reward normalization.
 
 The prioritized experience replay could be implemented with a binary tree in order to accelerate the sampling, instead of a simple numpy array.
